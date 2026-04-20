@@ -1,0 +1,128 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(10, 14, 39, 0.8);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border-glass);
+}
+
+.navbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-gradient);
+  border-radius: var(--radius-sm);
+  font-size: 1.2rem;
+}
+
+.logo-text {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.logo-accent {
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  color: var(--text-secondary);
+  font-weight: 500;
+  font-size: 0.9rem;
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+}
+
+.nav-link:hover {
+  color: var(--text-primary);
+  background: var(--bg-glass);
+}
+
+.nav-btn {
+  padding: 8px 20px !important;
+  font-size: 0.85rem !important;
+}
+
+.nav-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 8px;
+  padding: 4px 8px 4px 4px;
+  background: var(--bg-glass);
+  border-radius: 50px;
+  border: 1px solid var(--border-glass);
+}
+
+.nav-avatar {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-gradient);
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.nav-name {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.nav-logout {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 107, 107, 0.1);
+  color: var(--accent-red);
+  border-radius: 50%;
+  font-size: 0.9rem;
+  transition: all var(--transition-fast);
+}
+
+.nav-logout:hover {
+  background: rgba(255, 107, 107, 0.2);
+}
+
+@media (max-width: 768px) {
+  .navbar-links { gap: 4px; }
+  .nav-name { display: none; }
+  .nav-link { padding: 8px 10px; font-size: 0.8rem; }
+}
