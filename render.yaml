@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: book-management-api
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node backend/server.js
+    envVars:
+      - key: MONGODB_URI
+        fromDatabase:
+          name: book-management-db
+          property: connectionString
+      - key: JWT_SECRET
+        sync: false
+      - key: RAZORPAY_KEY_ID
+        sync: false
+      - key: RAZORPAY_KEY_SECRET
+        sync: false
+      - key: PORT
+        value: "5000"
+
+databases:
+  - name: book-management-db
+    databaseName: book_management
+    user: admin
