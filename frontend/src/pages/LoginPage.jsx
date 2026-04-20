@@ -58,13 +58,6 @@ const LoginPage = () => {
           <div className="auth-footer">
             <p>Don't have an account? <Link to="/register" className="auth-link">Create one</Link></p>
           </div>
-          <div className="auth-demo">
-            <p className="demo-title">Demo Accounts:</p>
-            <div className="demo-accounts">
-              <button className="demo-btn" onClick={() => { setEmail('admin@bookstore.com'); setPassword('admin123'); }}>Admin Login</button>
-              <button className="demo-btn" onClick={() => { setEmail('customer@bookstore.com'); setPassword('customer123'); }}>Customer Login</button>
-            </div>
-          </div>
         </motion.div>
       </div>
     </AnimatedPage>
