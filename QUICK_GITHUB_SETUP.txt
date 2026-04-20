@@ -1,0 +1,39 @@
+# 📋 Quick Reference: Push Code to GitHub
+
+## 1. Create Repository on GitHub.com
+
+- Go to https://github.com/new
+- Name: `book-management`
+- Click **Create repository**
+- Copy the HTTPS URL
+
+## 2. Copy Your Repository URL
+
+Your URL will look like:
+```
+https://github.com/YOUR_USERNAME/book-management.git
+```
+
+## 3. Run These Commands
+
+Open PowerShell and run (replace `YOUR_USERNAME`):
+
+```powershell
+cd "c:\Users\DIYA FATHIMA TA\Downloads\book management"
+git remote add origin https://github.com/YOUR_USERNAME/book-management.git
+git branch -M main
+git push -u origin main
+```
+
+## 4. Authenticate
+
+- Enter your GitHub username
+- For password: Use a Personal Access Token from https://github.com/settings/tokens
+
+## Done! 🎉
+
+Your code is now on GitHub!
+
+---
+
+**See CREATE_GITHUB_REPO.md for detailed instructions**
